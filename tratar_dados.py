@@ -19,8 +19,8 @@ conditions = [
     (df_copy['home_goal'] == df_copy['away_goal'])
 ]
 
-# choices = [3, 0, 1]
-choices = [1, 0, 0]
+choices = [3, 0, 1]
+#choices = [1, 0, 0]
 
 result = np.select(conditions, choices, default=np.nan)
 df_copy['result'] = result.astype('int') 
